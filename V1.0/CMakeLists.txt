@@ -1,0 +1,5 @@
+project(flag-recognize)
+find_package(OpenCV REQUIRED)
+include_directories("/usr/include/eigen3/")
+add_executable(flag-recognize flag-recognize)
+target_link_libraries(flag-recognize ${OpenCV_LIBS})
