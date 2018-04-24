@@ -28,7 +28,7 @@ sensor_msgs::ImagePtr msg;
 CCqUsbCam cam0;
 int time1,time2;
 
-void Disp(unsigned char* frameData)
+void Disp(void* frameData)
 {
 	/*time1 = clock();
 	printf("Frame Rate: %d/n",1000000/(time1 - time2));
